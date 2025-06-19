@@ -17,7 +17,7 @@ const App = () => {
           <Route path="/browse" element={<BrowseBooks />} />
           <Route path="/books/:category" element={<BrowseBooks />} />
           <Route path="/book/:bookId" element={<BookDetails />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
       </main>
     </div>
