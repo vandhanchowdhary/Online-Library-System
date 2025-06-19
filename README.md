@@ -15,7 +15,7 @@ An online library management app built with React, Redux, and Tailwind CSS. User
 - **Browse Books**
   - Filter books by category via dropdown or dynamic route (`/books/:category`)
   - Search books by title or author
-  - Responsive grid layout of books
+  - Responsive flex layout for books
 
 - **Book Details**
   - View full details of a selected book
@@ -73,7 +73,7 @@ src/
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-username/online-library.git
+git clone https://github.com/vandhanchowdhary/Online-Library-System.git
 cd online-library
 ```
 
