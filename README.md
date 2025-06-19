@@ -43,6 +43,7 @@ An online library management app built with React, Redux, and Tailwind CSS. User
 
 ## File Structure
 
+```bash
 src/
 │
 ├── components/         # Reusable UI components
@@ -65,6 +66,7 @@ src/
 ├── styles.css          # Tailwind import
 ├── App.jsx             # Main app router
 └── main.jsx            # React DOM root
+```
 
 ---
 
