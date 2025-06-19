@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -6,7 +5,7 @@ const Navbar = () => {
     <header className="bg-blue-900 text-white flex flex-row justify-between h-[12%] items-center w-full fixed top-0 left-0 right-0 z-50 shadow-lg">
       <div className="flex items-center pl-29">
         <img
-          src="/logo.png"
+          src="./logo.png"
           alt="stacked books"
           className=" bg-blue-300 rounded-[100%] w-14 h-14"
         />

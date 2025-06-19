@@ -1,4 +1,3 @@
-import React from "react";
 import BookCard from "./bookCard";
 import { useNavigate } from "react-router-dom";
 
