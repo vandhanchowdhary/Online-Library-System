@@ -17,9 +17,14 @@ const Home = () => {
 
   return (
     <div className="flex flex-col overflow-y-auto overflow-x-hidden flex-1 p-5 w-full">
-      <h1 className="text-3xl font-bold my-4">
+      
+      <div>
+        <h1 className="text-2xl font-bold mb-2">
         Welcome to the Online Library!
       </h1>
+      </div>
+      
+      
       <BookSection title="Fiction" books={fictionBooks} category="fiction" />
       <BookSection
         title="Non-Fiction"

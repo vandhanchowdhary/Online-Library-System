@@ -30,14 +30,15 @@ const BrowseBooks = () => {
   });
 
   return (
-    <div className="px-4 py-10 w-full">
-      <h1 className="text-3xl font-bold mb-6">Browse Books</h1>
+    <div className="p-4 w-full">
+      <h1 className="text-2xl font-bold mb-6">Browse your favourite books</h1>
 
       <div className="flex flex-wrap items-center gap-4 mb-6">
+        <h2>Category:</h2>
         <select
           value={category || "All"}
           onChange={handleCategoryChange}
-          className="border p-2 rounded-md"
+          className="border p-2 rounded-xl"
         >
           {categories.map((cat) => (
             <option key={cat}>{cat}</option>
@@ -46,22 +47,22 @@ const BrowseBooks = () => {
 
         <input
           type="text"
-          placeholder="Enter title or author"
+          placeholder="Search by typing the book title or author"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="border p-2 rounded-md flex-1"
+          className="border bg-gray-200 p-2 rounded-xl flex-1"
         />
 
         <button
           onClick={() => setSearchTerm("")}
-          className="bg-blue-600 text-white px-4 py-2 rounded-md"
+          className="bg-blue-600 text-white px-4 py-2 rounded-xl"
         >
           Clear
         </button>
       </div>
 
       {filteredBooks.length > 0 ? (
-        <div className="flex flex-wrap justify-center gap-6">
+        <div className="flex flex-wrap justify-center gap-4">
           {filteredBooks.map((book) => (
             <BookCard key={book.id} {...book} />
           ))}

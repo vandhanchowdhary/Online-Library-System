@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <header className="bg-blue-900 text-white fixed top-0 left-0 right-0 z-50 w-full shadow-md">
-      <div className="max-w-screen-xl mx-auto px-4 py-3 flex flex-col md:flex-row items-center justify-between gap-2">
+    <header className="bg-blue-900 text-white sticky top-0 left-0 right-0 z-50 w-full shadow-md">
+      <div className="w-screen px-4 py-3 flex flex-col md:flex-row items-center justify-between gap-2">
 
         <div className="flex items-center gap-3">
           <img
@@ -28,7 +28,7 @@ const Navbar = () => {
           </Link>
         </nav>
 
-        <p className="text-xs italic text-center md:text-right">
+        <p className="text-xs italic text-center mx-2">
           Brought to you by React + Redux
         </p>
       </div>

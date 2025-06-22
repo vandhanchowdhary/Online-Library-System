@@ -20,7 +20,7 @@ const BookDetails = () => {
     .slice(0, 10);
 
   return (
-    <div className="px-4 py-10 w-full mx-auto flex flex-col gap-2">
+    <div className="p-4 w-full mx-auto flex flex-col gap-2">
       <button
         className="mb-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 w-max"
         onClick={() => navigate(-1)}
@@ -55,7 +55,7 @@ const BookDetails = () => {
       </div>
 
       {similarBooks.length > 0 && (
-        <div className="mt-8">
+        <div className="mt-4 p-2 rounded-xl bg-gray-200">
           <BookSection
             title="Similar Books"
             books={similarBooks}

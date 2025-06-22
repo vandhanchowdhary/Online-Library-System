@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div className="h-screen flex flex-col overflow-hidden">
       <Navbar />
-      <main className="flex-1 max-md:pt-30 overflow-y-auto bg-gray-50 px-4 pt-20 w-[100%]">
+      <main className="flex-1 overflow-y-auto bg-gray-50 w-[100%]">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/add" element={<AddBook />} />
