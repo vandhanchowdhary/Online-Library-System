@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const BookCard = ({ id, title, author, description, rating, category, cover }) => {
   return (
-    <div className="bg-white shadow-xl rounded-xl p-3 w-64 shrink-0 flex flex-col transform transition-transform duration-200 hover:scale-105 hover:-translate-y-1 hover:shadow-2xl hover:shadow-gray-500">
+    <div className="bg-white shadow-xl rounded-xl p-3 w-64 shrink-0 flex flex-col transform transition-all duration-200 hover:scale-105 hover:-translate-y-1 hover:shadow-2xl hover:shadow-gray-500">
       {cover && (
         <img
           src={cover}
