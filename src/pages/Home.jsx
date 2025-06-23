@@ -17,14 +17,16 @@ const Home = () => {
 
   return (
     <div className="flex flex-col overflow-y-auto overflow-x-hidden flex-1 p-5 w-full">
-      
-      <div>
+      <div className="flex justify-between items-center">
         <h1 className="text-2xl font-bold mb-2">
-        Welcome to the Online Library!
-      </h1>
+          Welcome to the Online Library!
+        </h1>
+        <p className="text-gray-600 text-sm">
+          Explore our collection of books across various genres. You can find
+          your favorite books and discover new ones!
+        </p>
       </div>
-      
-      
+
       <BookSection title="Fiction" books={fictionBooks} category="fiction" />
       <BookSection
         title="Non-Fiction"
